@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/homepage.css">
+    <script defer src="/js/homepage.js" type="module"></script>
+    <title>Homepage</title>
+</head>
+
+<body>
+    <div class="maindivouter">
+        <div class="maindiv">
+            <div class="header">
+                <!-- <div class="options">
+                    <p>options</p>
+                </div> -->
+                <a href="./homepage.html">
+                    <p class="mainheading">QUIZIT</p>
+                </a>
+                <div class="useroptions">
+                    <div class="useroptioninner">
+                        <div class="userimage">
+                            <img src="./images/profile-user.png" alt="not found">
+                        </div>
+                        <div class="useroptionsbuttoms">
+                            <button type="button" id="logoutbutton">logout</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="buttomdiv">
+                <div class="sidebar">
+                    <div class="startbtndiv">
+                        <button class="btn startquizbtn startquizbtnmain" onclick="modelvisibility(true)">New
+                            Exam</button>
+                    </div>
+                    <div class="resultstext selected">
+                        <a href="">Completed Quizs</a>
+                    </div>
+                </div>
+                <div class="resultsdiv">
+                    <div class="results">
+                        <!-- resultdivs -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="startquizmodel">
+            <div class="startquizmodelinner">
+                <div class="quizforminner">
+                    <div class="quizformheading">
+                        <h3>Start Exam</h3>
+                    </div>
+                    <div class="inputdiv">
+                        <label for="catogory">Catogory</label>
+                        <select name="catogory" id="catogory">
+                            <option value="science">science</option>
+                            <option value="mixed">mixed</option>
+                        </select>
+                        <label for="difficulty">Difficulty</label>
+                        <select name="difficulty" id="difficulty">
+                            <option value="easy">Easy</option>
+                            <option value="medium">Medium</option>
+                            <option value="hard">Hard</option>
+                            <option value="mixed">Mixed</option>
+                        </select>
+                        <label for="noofquestions">Number Of Questions</label>
+                        <select name="noofquestions" id="noofquestions">
+                            <option value="10">10</option>
+                            <option value="20">20</option>
+                            <option value="30">30</option>
+                            <option value="40">40</option>
+                            <option value="50">50</option>
+                        </select>
+                    </div>
+                    <div class="loginandsignupbtndiv">
+                        <button class="btn startquizbtn" type="button" onclick="startexam()">Start Exam</button>
+                    </div>
+                </div>
+                <button class="closebtn btn" onclick="modelvisibility(false)">&times;</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
