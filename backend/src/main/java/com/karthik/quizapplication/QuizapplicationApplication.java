@@ -11,6 +11,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import com.karthik.quizapplication.Models.User;
 import com.karthik.quizapplication.Repositories.UserRepository;
 
+// This is made by Katakam Karthik Reddy
 @SpringBootApplication
 public class QuizapplicationApplication {
 
